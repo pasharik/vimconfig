@@ -33,4 +33,5 @@ set rnu
 set shiftwidth=4
 set expandtab
 
+" use system clipboard
 set clipboard=unnamedplus

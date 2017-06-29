@@ -22,7 +22,7 @@ highlight lCursor guifg=NONE guibg=Cyan
 :set hls is
 :set ic
 
-nmap <silent> ,, :NERDTreeToggle<CR>
+nmap <silent> \f :NERDTreeToggle<CR>
 inoremap { {<CR>}<Esc>ko
 "inoremap {      {}<Left>
 

@@ -35,3 +35,11 @@ set expandtab
 
 " use system clipboard
 set clipboard=unnamedplus
+
+"""" path-start """"
+set nocompatible
+syntax enable
+filetype plugin on
+set path+=**
+set wildmenu
+"""" path-end """"

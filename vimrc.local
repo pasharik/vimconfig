@@ -1,45 +1,38 @@
 "plugins
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+set rtp+=$HOME/vimfiles/bundle/Vundle.vim/
+call vundle#begin('$HOME/vimfiles/bundle/')
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
-
-"Plugin 'Townk/vim-autoclose'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 "end plugins
 
+
+" color scheme of the moment:
+syntax on
+colorscheme slate
+
+:set encoding=utf-8
+:set fileencoding=utf-8
+:set guifont=Lucida\ Console:h10
+
 set keymap=russian-jcukenwin
 set iminsert=0
 set imsearch=0
 highlight lCursor guifg=NONE guibg=Cyan
-"setlocal spell spelllang=ru_yo,en_us
 
-:set hls is
-:set ic
+set clipboard+=unnamed
+set rnu
+set number
+
+map <Enter> o<ESC>
+map <S-Enter> O<ESC>
 
 nmap <silent> \f :NERDTreeToggle<CR>
-inoremap { {<CR>}<Esc>ko
-"inoremap {      {}<Left>
 
-" line numbers
-set rnu
-
-" indent
-set shiftwidth=4
-set expandtab
-
-" use system clipboard
-set clipboard=unnamedplus
-
-"""" path-start """"
-set nocompatible
-syntax enable
-filetype plugin on
-set path+=**
-set wildmenu
-"""" path-end """"
+" highlight search
+set hls
